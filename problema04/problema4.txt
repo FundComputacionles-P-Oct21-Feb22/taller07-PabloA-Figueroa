@@ -1,0 +1,48 @@
+Generar una solución que permita ingresar jugadores de fútbol; por cada jugador se debe solicitar:
+-Nombre el jugador
+-Posición en el campo de juego
+-Edad
+-Estatura
+
+1. Inicio
+2. nombreJ, x(30)[{A-Z},{a-z},{BS}] 
+3. posicion, x(30)[{A-Z},{a-z},{BS}] 
+4. edad, i[0, n]
+5. estatura, d[0, n]
+6. promedioE, i[0, n] <-- 0
+7. promedioES, d[0, n] <--0
+8. contador, i[0, n] <-- 0
+9. cadenaF, x(300)[{A-Z},{a-z},{BS},{- , + , , ,.},{1-10},] <-- ""
+10. salida <-- true 
+
+11. Haga hasta
+
+12. Ingrese en nombre completo del jugador 
+13. Lea nombreJ
+14. Ingrese la posicion del jugador 
+15. Lea posicion 
+16. Ingrese la edad del jugador 
+17. Lea edad 
+18. Ingrese la estatura del jugador 
+19. Lea estatura 
+20. contador <-- contador + 1 
+
+21. cadenaF <-- cadenaF + contador + "." + nombre + " -" + posicion + "-" + ", edad " + edad + ", estatura " + estatura + " "
+
+22. promedioE <-- promedioE + edad 
+23. promedoES <-- promedioEs + estatura 
+
+24. Ingrese "salir" para finalizar el proceso
+25. Lea salida
+26.  Si  salida = salir  entonces
+27.   salida <-- falso 
+
+28. Fin Haga_Hasta ( salida = falso)
+
+29. Escribir cadenaF // 1.Juan Perez -Arquero-, edad 10, estatura 1.15 // Pepito Suarez -Defensa-, edad 20, estatura 1.20
+30. promedioE <-- promedioE / contador 
+31. Escribir "Promedio de edad es: " + promedioE 
+32. promedioE <-- promedioES / contador 
+33. Escribir "Promedio de Estatura es: " + promedioES 
+
+34.Fin
